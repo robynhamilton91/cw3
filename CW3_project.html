@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Television watching habits in the UK & Ireland May 2021 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="js/uikit-2.27.5/css/uikit.almost-flat.min.css" />
+  <link type="text/css" rel="stylesheet" href="js/uikit-2.27.5/css/components/sticky.almost-flat.min.css" />
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/uikit-2.27.5/js/uikit.min.js"></script>
+  <script type="text/javascript" src="js/uikit-2.27.5/js/components/sticky.min.js"></script>
+  <script type="text/javascript" src="js/uikit-2.27.5/js/components/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/uikit-2.27.5/js/components/parallax.min.js"></script>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto');
+
+    html {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    H1,H2 {
+      font-family: 'Open Sans Bold', sans-serif;
+      color: white;
+      text-shadow: 2px 2px #5a3caf;
+      
+    }
+
+    H3 {
+      font-family: 'Open Sans', sans-serif;
+      color: #9930a6;
+      padding-bottom: 10px;
+    }
+
+    .uk-navbar-nav>li:not(.uk-active)>a:hover {
+      background-color: rgb(230, 230, 230);
+      font-family: 'Open Sans Bold', sans-serif;
+      color: #5a3caf;
+    }
+
+    .uk-navbar-nav>li:not(.uk-active)> {
+      background-color: rgb(230, 230, 230);
+      font-family: 'Open Sans Bold', sans-serif;
+      color: #5a3caf;
+    }
+
+    .uk-navbar {
+      z-index: 100;
+      font-family: 'Open Sans Bold', sans-serif;
+      color: #5a3caf;
+
+    }
+
+    .plain {
+      color: #5a3caf;
+      text-shadow: none;
+    }
+
+    .uk-link>li:not(.uk-active)> {
+      background-color: rgb(230, 230, 230);
+      font-family: 'Open Sans Bold', sans-serif;
+      color: #5a3caf;
+    }
+
+    a {
+      color: #ff3e64;
+    }
+
+    a:hover {
+      color: #ffa600;
+    }
+
+    .footer-text {
+      color: #999999;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .center {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .bgimage {
+      margin-bottom: 30px;
+      margin-top: 60px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="uk-cover uk-height-viewport uk-hidden-small">
+    <img src="img/ladywatchingtv.jpg" width="100%">
+		<figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+			<div>
+        <h1 class="uk-heading-large">Whatcha watchin'?</h1>
+        <h2>An analysis of current television watching habits in the UK & Ireland</h2>
+        <a href="#intro" data-uk-smooth-scroll><i class="uk-icon-chevron-down uk-icon-large"></i></a>
+      </div>
+    </figcaption>
+  </div>
+
+  <div class="uk-cover uk-height-viewport uk-hidden-large">
+    <img src="img/ladywatchingtvsmall.jpg" width="100%">
+		<figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+			<div>
+        <h1 class="uk-heading-large">Whatcha watchin'?</h1>
+        <h2>An analysis of current television watching habits in the UK & Ireland</h2>
+        <a href="#intro" data-uk-smooth-scroll><i class="uk-icon-chevron-down uk-icon-large"></i></a>
+      </div>
+    </figcaption>
+  </div>
+
+
+  <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+    <a href="" class="uk-navbar-brand uk-hidden-small">Whatcha watchin'?</a>
+    <ul class="uk-navbar-nav uk-hidden-small" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 50}}">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#method">Research Methodology</a></li>
+      <li><a href="#how">How we're watching</a></li>
+      <li><a href="#where">Where we're watching</a></li>
+      <li><a href="#what">What we're watching</a></li>
+      <li><a href="#influences">Key influences</a></li>
+      <li><a href="#future">The future of TV watching</a></li>
+      
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large uk-hidden-medium" data-uk-offcanvas></a>
+    <a href="" class="uk-navbar-brand uk-navbar-center uk-hidden-large uk-hidden-medium">Whatcha watchin'?</a>
+  </nav>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+
+		<h2 id="intro" class="plain">Introduction</h2>
+    <p>How we watch TV has changed considerably in recent years. It goes without saying that the biggest shift we've seen in the last decade came when the increasingly widespread availability of on-demand streaming services transferred control of what, when and where we watch into the hands of the viewer. It’s never been easier to curate a schedule of programming to meet your specific tastes, budget and time constraints.</p>
+    <p>Time was, you’d have to crowd around the household TV set and watch whatever was served up to you, whether it was the evening news or a lacklustre soap opera your mum wanted to watch. These days, if you want to shut out the world and binge-watch a 13 hour long true crime murder mystery series while on a plane across the Pacific on your phone, you can have at it!   
+    </p>
+    <p>The coronavirus pandemic has done much to accelerate the continuing shift away from traditional broadcast television to on-demand online platforms. Access to streaming services morphed from an entertainment outlet into a lifeline, so much so that early on in the first lockdown, <a href="https://www.theguardian.com/media/2020/mar/19/netflix-to-slow-europe-transmissions-to-avoid-broadband-overload">Netflix was forced to throttle its speeds across Europe</a> to free up bandwidth for home workers. For many, watching TV became the key to escaping the hellscape of a ceaselessly doom-filled news cycle and something that was easy to do in the confines of quarantine.</p>
+    <p>Considering all these factors, as an avid TV watcher and cinephile myself, I felt compelled to learn more, so for the purposes of this project I decided to carry out a survey of current TV watching habits across the UK and Ireland. What follows is a report and analysis of the findings from that survey.</p>
+  </div>
+
+<div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle bgimage" id="method" style="background-image: url('img/Methodology_BackgroundStretch.jpg');height:200px;background-position:center;">
+			<h2 class="uk-heading-large" data-uk-parallax="{opacity:0.3,y:100}">Research Methodology</h2>
+</div>
+   
+ 
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+    <p>The data from this survey was collected using an online questionnaire I created using <a href="https://www.google.co.uk/forms/about/">Google forms</a>. In designing the questionnaire to narrow down my research questions, I decided to work backwards. I began by brainstorming and asking myself what kind of answers I wanted to find in the results of the survey. How are people watching TV these days? Do more people watch on-demand TV or live TV? How much TV are people watching per day? Do people prefer to watch new shows or return to old favourites? And so on. By grouping together and refining what I wanted to know into certain areas, I narrowed the survey down into twenty questions, spread across eight sections covering what, when, where and how questions surrounding TV watching habits.</p>
+    <p>Before sending out the survey, I asked several people to sense-check it for me to ensure all the questions were clear and easy to understand, that they made sense to the participant and that the overall flow of the questionnaire wasn’t too repetitive. Having taken many surveys in the past, I wanted to avoid survey fatigue that often happens when questions are overly long, repetitive or laborious. After I received feedback, I made a few small tweaks, and it was ready to go.</p>
+    
+    <h3 class="uk-text-left">Qualitative or quantitative?</h3>
+    <p>As I am mainly interested in gathering valid top-level information that is easily generalisable, the majority of the questions featured in the survey were quantitative in nature. The bulk of them were multiple choice and there is also a section of questions which used a Likert scale to gauge influences on TV watching choices. A minority of questions were open ended, allowing participants to expand on their reasonings for previous questions. However, even with the answers to these questions, I approached their analysis quantitatively by searching for frequently occurring words to gauge sentiment on certain topics.</p>
+    
+    <h3 class="uk-text-left">Sampling Methods</h3>
+    <p>To find suitable participants for the survey, I used a combination of probability and non-probability sampling methods.</p>
+    <p>Firstly, I decided I wanted the survey to cover both UK and Irish populations (as opposed to just the UK) as I am Irish and have convenient access to Irish as well as UK-based TV watchers. Secondly, access, language, appetite and tastes for television programming are largely similar between the two nations, meaning that it’s not unreasonable to combine the findings from the two into a singular set of generalisable data. Aside from the geographical consideration, the only other criteria participants needed to meet was to be over the age of 16 and of course, watch television on a regular basis.</p>
+    <p>To begin collecting my sample, I started with the convenience method. I sent the survey to friends, family members, colleagues and classmates to complete, in addition to posting it on my personal social media accounts.</p>
+    <p>As well as using this method, I used a combination of cluster sampling and voluntary response sampling methods. I identified several suitable online forums where I would be likely to find eligible volunteers for my sample. These included specific groups within Facebook, survey websites and a selection of relevant subreddit forums.</p>
+    <ul>
+      <li>Facebook groups: I posted the survey in a Facebook group called <a href="https://www.facebook.com/groups/1255012211233315/about">Dissertation Survey Exchange</a> – a space created for students to complete each other’s research project surveys.</li>
+      <li>Survey websites: Similarly, I used a few survey exchange websites like <a href="https://www.poll-pool.com/?locale=en">Pollpool</a> to gain more participants.</li>
+      <li>Subreddits: I identified a number of subreddits in which to post the survey including <a href="https://www.reddit.com/r/ireland/">r/Ireland</a>, <a href="https://www.reddit.com/r/dublin/">r/Dublin</a>, <a href="https://www.reddit.com/r/askuk/">r/AskUK</a>, and <a href="https://www.reddit.com/r/britishtv/">r/BritishTV</a>.</li>
+    </ul>
+  </div>
+
+
+  <div class="uk-container uk-container-center uk-margin-top uk-width-medium-2-3">
+      <div class="uk-grid">
+        <div class="uk-width-1-2">
+              <p class= "uk-hidden-small">I left the survey open from the 18th until the 24th of May 2021, and in that time <strong>amassed 711 completed surveys</strong>. Though I obtained participants from all of the above listed sources, the bulk of them came from the subreddit forums.</p>
+
+              <h3 class="uk-text-left uk-hidden-small">Advantages and disadvantages to chosen sampling methods </h3>
+              <p class= "uk-hidden-small">In a time of restrictive anti-Covid measures, where it’s hard to get out and find volunteers in a real-life setting, being able to source participants online was really convenient. As TV watching is a particularly accessible topic, it turned out that it wasn’t too hard to find volunteers. I managed to obtain far more responses than I was initially expecting. Posting on various online forums also meant that I was able to access a wider age range than had I just directly asked people that I know personally to participate.</p>
+              <p class= "uk-hidden-small">However, sourcing responses via voluntary response sampling has its downsides. For example, though I got a lot of responses filled with valuable insight from Reddit, it shouldn’t be ignored that Reddit’s user base generally have strong opinions and are more likely to answer a survey than other spaces on the internet, meaning that it isn’t possible to determine if their opinions are representative of all UK and Irish TV watchers.</p>
+              
+        </div>
+    
+          <div class="uk-width-1-2 uk-hidden-small">
+            <div data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+            <div class="flourish-embed" data-src="story/896837"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+      <p class= "uk-hidden-large">I left the survey open from the 18th until the 24th of May 2021, and in that time <strong>amassed 711 completed surveys</strong>. Though I obtained participants from all of the above listed sources, the bulk of them came from the subreddit forums.</p>
+        <div class="uk-hidden-large">
+          <div class="flourish-embed" data-src="story/896837"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+      <h3 class="uk-text-left uk-hidden-large">Advantages and disadvantages to chosen sampling methods </h3>
+      <p class= "uk-hidden-large">In a time of restrictive anti-Covid measures, where it’s hard to get out find volunteers in a real-life setting, being able to source participants online was really convenient. As TV watching is a particularly accessible topic, it turned out that it wasn’t too hard to find volunteers. I managed to obtain far more responses than I was initially expecting. Posting on various online forums also meant that I was able to access a wider age range than had I just directly asked people that I know personally to participate.</p>
+      <p class= "uk-hidden-large">However, sourcing responses via voluntary response sampling has its downsides. For example, though I got a lot of responses filled with valuable insight from Reddit, it shouldn’t be ignored that Reddit’s user base generally have strong opinions and are more likely to answer a survey than other spaces on the internet, meaning that it isn’t possible to determine if their opinions are representative of all UK and Irish TV watchers.</p>
+    </div>
+
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle bgimage" id="how" style="background-image: url('img/How_BackgroundStretch.jpg');height:200px;background-position:center;">
+			<h2 class="uk-heading-large" data-uk-parallax="{opacity:0.3,y:100}">How we're watching TV</h2>
+  </div>
+
+  <div class="uk-container uk-container-center uk-margin-top uk-width-medium-2-3">
+    <div class="uk-grid">
+      <div class="uk-width-1-3">
+            <p class= "uk-hidden-small">Let’s open up the exploration of the results of the survey by taking a look at how we actually watch television in 2021.</p>
+            <p class= "uk-hidden-small">Figure 2.1 shows the breakdown by age of all of the devices that each cohort regularly uses to watch TV. It shows preference for quite a diverse spread across devices, indicating that today’s average TV watcher wants variety when it comes how they typically watch TV. We can see that devices that offer more mobility like smartphones, laptops and tablets are particularly popular with younger age brackets.</p>
+            <p class= "uk-hidden-small">Figure 2.2 shows the go-to device to watch television across the entire sample. This chart shows that the at-home stationary TV set still reigns supreme as the favourite way to watch TV regardless of age group. From the list of options, altogether 73.1% of respondents chose a device that requires the use of a TV set to watch movies and TV shows as their favourite. Additionally, out of the nine available options, seven of them require an internet connection to access television, indicating that access to broadcast TV via traditional aerial or cable is not so important.</p>
+            <p class= "uk-hidden-small">In figure 2.3, we get a more detailed breakdown of favourite TV watching devices among different age groups. Here we can see that smart TVs increase in popularity with age. This may be due to the fact that older age groups are more likely to be able to afford smart TV sets which can be quite costly, as well as the tendency for older people to be in more settled living situations, where the mobility of their TV watching devices isn’t much of a concern.</p>
+      </div>
+          
+      <div class="uk-width-2-3 uk-hidden-small">
+        <div class="uk-card uk-card-default uk-card-body uk-sticky" style="position: sticky; top: 30px;" uk-sticky="bottom: #offset">
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+            <div class="flourish-embed" data-src="story/893823"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+          <p class= "uk-hidden-large">Let’s open up the exploration of the results of the survey by taking a look at how we actually watch television in 2021.</p>
+      <div class="uk-hidden-large">
+        <div class="uk-card uk-card-default uk-card-body uk-sticky" style="position: sticky; top: 30px;" uk-sticky="bottom: #offset">
+            <div class="flourish-embed" data-src="story/893823"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>    
+      </div>
+            <p class= "uk-hidden-large">Figure 2.1 shows the breakdown by age of all of the devices that each cohort regularly uses to watch TV. It shows preference for quite a diverse spread across devices, indicating that today’s average TV watcher wants variety when it comes how they typically watch TV. We can see that devices that offer more mobility like smartphones, laptops and tablets are particularly popular with younger age brackets.</p>
+          <p class= "uk-hidden-large">Figure 2.2 shows the go-to device to watch television across the entire sample. This chart shows that the at-home stationary TV set still reigns supreme as the favourite way to watch TV regardless of age group. From the list of options, altogether 73.1% of respondents chose a device that requires the use of a TV set to watch movies and TV shows as their favourite. Additionally, out of the nine available options, seven of them require an internet connection to access television, indicating that access to live TV via traditional aerial or cable is not so important.</p>
+          <p class= "uk-hidden-large">In figure 2.3, we get a more detailed breakdown of favourite TV watching devices among different age groups. Here we can see that smart TVs increase in popularity with age. This may be due to the fact that older age groups are more likely to be able to afford smart TV sets which can be quite costly, as well as the tendency for older people to be in more settled living situations, where the mobility of their TV watching devices isn’t much of a concern.</p>
+  </div>
+  
+
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle bgimage" id="where" style="background-image: url('img/Where_BackgroundStretch.jpg');height:200px;background-position:center;">
+    <h2 class="uk-heading-large" data-uk-parallax="{opacity:0.3,y:100}">Where we're watching TV</h2>
+</div>
+
+  <div class="uk-container uk-container-center uk-margin-top uk-width-medium-2-3">
+    <div class="uk-grid">
+      <div class="uk-width-1-3">
+            <p class= "uk-hidden-small">Since so many of us are watching TV through internet connected devices, let’s take a look at what on-demand streaming services we’re using the most. Figure 3.1 shows the top six most popular on-demand streaming services used amongst the sample. Perhaps unsurprisingly, Netflix rules the roost when it comes to subscribers. Though it’s not the longest established of the bunch (All 4 holds that title, having originally launched back in 2006 as 4oD) Netflix’s global presence, wealth of original content, massive back catalogue of familiar films and TV shows as well as its extensive marketing campaigns have really helped to propel the brand into popular consciousness since its UK and Ireland launch in 2012.</p>
+            <p class= "uk-hidden-small">It is worth noting though, that Netflix’s stranglehold isn’t absolute. For example, Disney Plus, which launched just over a year ago in March 2020 has had rapid uptake with TV viewers. Almost half of respondents said that they subscribe to the paid streaming service. However, it’s also worth noting the massive and lengthy brand heritage that comes with the Disney name as a provider of televisual family entertainment has likely done much to drive new sign-ups. By comparison, Apple TV, another streaming competitor with a big name behind it, launched 5 months before Disney Plus but only 17% of respondents listed themselves as subscribers to the service.</p>
+            <p class= "uk-hidden-small">Thinking about live TV now, as opposed to subscription video streaming services, figure 3.2 gives a breakdown of the services the sample use to access live TV. Right away, the key stat that jumps out here is that close to a third of respondents have no access to any live TV services and a further quarter use Freeview, which as the name would suggest, is free to use. This suggests that the demand for live TV (at least enough demand to pay for it) is not as strong as it once was. However, the results to this question don’t take into account that viewers can of course gain access to many live TV channels via various streaming services, thus circumventing the need for live TV access via more traditional channels.</p>
+            <p class= "uk-hidden-small">To dig a little further into this area of the data, figure 3.3 shows us what types of programming those who do have access to live TV tend to watch. Live is the key word here, as live TV remains the place to go for time-sensitive programming like news and current affairs programmes, sports, large live national events in the public interest and so on.  </p>
+      </div>
+      
+      <div class="uk-width-2-3 uk-hidden-small">
+        <div class="uk-card uk-card-default uk-card-body" style="position: sticky; top: 30px;" uk-sticky="{boundary:true,top:30}">
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+            <div class="flourish-embed" data-src="story/897944"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+    <p class= "uk-hidden-large">Since so many of us are watching TV through internet connected devices, let’s take a look at what on-demand streaming services we’re using the most. Figure 3.1 shows the top six most popular on-demand streaming services used amongst the sample. Perhaps unsurprisingly, Netflix rules the roost when it comes to subscribers. Though it’s not the longest established of the bunch (All 4 holds that title, having originally launched back in 2006 as 4oD) Netflix’s global presence, wealth of original content, massive back catalogue of familiar films and TV shows as well as its extensive marketing campaigns have really helped to propel the brand into popular consciousness since its UK and Ireland launch in 2012.</p>
+      <div class="uk-hidden-large">
+        <div class="flourish-embed" data-src="story/897944"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>
+    <p class= "uk-hidden-large">It is worth noting though, that Netflix’s stranglehold isn’t absolute. For example, Disney Plus, which launched just over a year ago in March 2020 has had rapid uptake with TV viewers. Almost half of respondents said that they subscribe to the paid streaming service. However, it’s also worth noting the massive and lengthy brand heritage that comes with the Disney name as a provider of televisual family entertainment has likely done much to drive new sign-ups. By comparison, Apple TV, another streaming competitor with a big name behind it, launched 5 months before Disney Plus but only 17% of respondents listed themselves as subscribers to the service.</p>
+    <p class= "uk-hidden-large">In figure 2.3, we get a more detailed breakdown of favourite TV watching devices among different age groups. Here we can see that smart TVs increase in popularity with age. This may be due to the fact that older age groups are more likely to be able to afford smart TV sets which can be quite costly, as well as the tendency for older people to be in more settled living situations, where the mobility of their TV watching devices isn’t much of a concern.</p>
+    <p class= "uk-hidden-large">Thinking about live TV now, as opposed to subscription video streaming services, figure 3.2 gives a breakdown of the services the sample use to access live TV. Right away, the key stat that jumps out here is that close to a third of respondents have no access to any live TV services and a further quarter use Freeview, which as the name would suggest, is free to use. This suggests that the demand for live TV (at least enough demand to pay for it) is not as strong as it once was. However, the results to this question don’t take into account that viewers can of course gain access to many live TV channels via various streaming services, thus circumventing the need for live TV access via more traditional channels.</p>
+    <p class= "uk-hidden-large">To dig a little further into this area of the data, figure 3.3 shows us what types of programming those who do have access to live TV watch tend to watch. Live is the key word here, as live TV remains the place to go for time-sensitive programming like news and current affairs programmes, sports, large live national events in the public interest and so on.  </p>
+
+  </div>
+    
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle bgimage" id="what" style="background-image: url('img/What_BackgroundStretch.jpg');height:200px;background-position:center;">
+    <h2 class="uk-heading-large" data-uk-parallax="{opacity:0.3,y:100}">What we're watching on TV</h2>
+  </div>
+
+  <div class="uk-container uk-container-center uk-margin-top uk-width-medium-2-3">
+    <div class="uk-grid">
+      <div class="uk-width-1-3">
+            <p class= "uk-hidden-small">Now we’ve got a good idea of how and where people are watching TV, let’s explore what kind of content people most enjoy watching. Figure 4.1 shows us that TV programmes are the go-to preference over feature films for everyday viewing. This makes sense, given that watching a feature film more often than not represents a bigger one-sitting time commitment than watching a TV show. Hence, on the topic of TV shows over films specifically, figure 4.2 gives an overview of the most popular TV genres among different age brackets.</p>
+            <p class= "uk-hidden-small">It’s been <a href="https://variety.com/2019/tv/news/top-19-media-trends-of-2019-bidding-war-for-classic-tv-hits-1203454261/">well-publicised</a> that competing streaming platforms regularly engage in bidding wars and pay hundreds of millions each year to secure the streaming rights to popular shows that are no longer producing and airing new episodes on TV. This is because a back catalogue of content makes it easier for streaming platforms to attract new subscribers with the promise of beloved content known to them, while also offering new and exciting (but untested) original content. Figure 4.3 backs this assumption up, as we can see that nearly half of the sample respondents prefer to watch a mixture of familiar old shows and new content they’ve never watched before. And a further 1 in 10 say they turn to streaming platforms primarily to rewatch old favourites.</p>
+            <p class= "uk-hidden-small">So, we can confirm that there is indeed a strong appetite across TV watching audiences for old and familiar content, but I was curious to know the reasons behind this phenomenon. Why are TV viewers so attracted to old titles they’ve watched again and again? Particularly, given that we’re living in what has been referred to as <a href="https://en.wikipedia.org/wiki/Golden_Age_of_Television_(2000s%E2%80%93present)">"The Golden Age of Television" </a>where the barriers of access to an almost limitless variety of options are so low, why is watching Friends for the umpteenth time still more attractive for many of us?</p>
+            <p class= "uk-hidden-small">To find out, I added an open-ended question to the survey asking participants to describe in their own words, the reasons why they return to the same TV shows again and again. Figure 4.4 shows a word cloud of the most frequently occurring words and phrases that came up in answer to this question, while figure 4.5 shows a word cloud of frequently occurring TV shows that people mentioned that they like to rewatch.</p>
+      </div>
+      
+      <div class="uk-width-2-3 uk-hidden-small">
+        <div class="uk-card uk-card-default uk-card-body" style="position: sticky; top: 30px;" uk-sticky="{boundary:true,top:30}">
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+            <div class="flourish-embed" data-src="story/898415"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+    <p class= "uk-hidden-large">Now we’ve got a good idea of how and where people are watching TV, let’s explore what kind of content people most enjoy watching. Figure 4.1 shows us that TV programmes are the go-to preference over feature films for everyday viewing. This makes sense, given that watching a feature film more often than not represents a bigger one-sitting time commitment than watching a TV show. Hence, on the topic of TV shows over films specifically, figure 4.2 gives an overview of the most popular TV genres among different age brackets.</p>
+      <p class= "uk-hidden-large">It’s been <a href="https://variety.com/2019/tv/news/top-19-media-trends-of-2019-bidding-war-for-classic-tv-hits-1203454261/">well-publicised</a> that competing streaming platforms regularly engage in bidding wars and pay hundreds of millions each year to secure the streaming rights to popular shows that are no longer producing and airing new episodes on TV. This is because a back catalogue of content makes it easier for streaming platforms to attract new subscribers with the promise of beloved content known to them, while also offering new and exciting (but untested) original content. Figure 4.3 backs this assumption up, as we can see that nearly half of the sample respondents prefer to watch a mixture of familiar old shows and new content they’ve never watched before. And a further 1 in 10 say they turn to streaming platforms primarily to rewatch old favourites.</p>
+      <p class= "uk-hidden-large">So, we can confirm that there is indeed a strong appetite across TV watching audiences for old and familiar content, but I was curious to know the reasons behind this phenomenon. Why are TV viewers so attracted to old titles they’ve watched again and again? Particularly, given that we’re living in what has been referred to as <a href="https://en.wikipedia.org/wiki/Golden_Age_of_Television_(2000s%E2%80%93present)">"The Golden Age of Television" </a>where the barriers of access to an almost limitless variety of options are so low, why is watching Friends for the umpteenth time still more attractive for many of us?</p>
+      <p class= "uk-hidden-large">To find out, I added an open-ended question to the survey asking participants to describe in their own words, the reasons why they return to the same TV shows again and again. Figure 4.4 shows a word cloud of the most frequently occurring words and phrases that came up in answer to this question, while figure 4.5 shows a word cloud of frequently occurring TV shows that people mentioned that they like to rewatch.</p>
+
+  </div>
+
+<div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+  <p class= "uk-hidden-small">With over 350 responses to this optional question, qualitatively analysing the results, they boil down the following essential reasons:</p>
+</div>
+
+  <div class="uk-container uk-container-center uk-margin-top uk-width-medium-2-3 uk-hidden-small">
+    <div class="uk-grid">
+      <div class="uk-width-1-2">
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"The Office and Parks and Recreation remind me of a good time in my life, so I rewatched both fully this year during the pandemic."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"Star Trek Voyager - it’s cosy, and every episode has a hidden lesson behind it which is really thought provoking. It’s also very easy to watch when you’re not paying full attention."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"Schitt's Creek. It's a beautiful series that brings me great joy and is my comfort watch. I can practically quote every episode in its entirety by heart. But I liken it to listening to music. We don't listen to a song or album we love just once; we listen to them again and again to experience the emotions they evoke in us."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"The Office. I've recently moved to Ireland and rewatching The Office brings me comfort in a time where everything is uncertain and I know no one. It's a safe space sort of... familiar."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"Community. There are so many episodes but so many layered jokes that I get the best of both worlds— I get the comfort of a solid rewatch, but also the joy of copping on to a joke or reference that I hadn’t before."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"Forensic Files. It's fascinating. I also used to watch it with my children who I miss a lot now that they're grown and I live very far away from them."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"It's Always Sunny in Philadelphia. They are all such awful people it makes me feel better about myself. Most importantly though, it's hilarious."</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"I'm rewatching Sex and the City at the moment. I think I'm watching it for comfort viewing. Don't need more post-apocalyptic drama than we already have IRL. Sometimes escapism to a hyper-glam version of a city where a narcissist gets paid a ridiculous 5 dollars per word as a writer is OK!"</p>
+        </blockquote>
+        <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+          <p>"Fleabag and Peep Show - there is something relieving when you know what is going to happen!"</p>
+        </blockquote>
+        
+      </div>
+      
+      <div class="uk-width-1-2 uk-hidden-small">
+        <div class="uk-card uk-card-default uk-card-body" style="position: sticky; top: 30px;" uk-sticky="{boundary:true,top:30}">
+          <ul>
+            <li><strong>Predictability:</strong> Viewers like knowing what they can expect. If they liked a show the first time around, they can reasonably expect to enjoy it on multiple viewings. Already knowing what’s going to happen lessens any tensions that can build up, making for a more relaxing TV watching experience.</li>
+            <li><strong>Decision paralysis:</strong> related to predictability, many respondents cited an overabundance of choice as a reason to return to old favourites. Unable to decide on something new, viewers go for the ease of the ‘safe option,’ choosing something they’ve watched and enjoyed before. </li>
+            <li><strong>Nostalgia:</strong> many viewers cited nostalgia and “it’s a show I grew up with” as reasons to return to a particular TV show. Watching something associated with positive memories for a viewer is an easy form of escapism.</li>
+            <li><strong>Picking up missed details:</strong> Many viewers who cited longer TV drama series as types that they would return to, do so to pick up smaller details that they missed the first time around. Additionally, for this type of show, lots of viewers said they would rewatch a series they had enjoyed after a few years had gone by and they had forgotten most of the plot details, meaning they could watch it as if it were for the first time again.</li>
+            <li><strong>Joke appreciation:</strong> Many respondents cited comedy shows as the type that they most enjoy rewatching because they love to return to the well-written jokes that make them laugh.</li>
+            <li><strong>Comfort factor:</strong> related to almost all of the above factors, many viewers enjoy rewatching old shows because the familiarity they offer is a soothing and comforting way to unwind. Related to this, many rewatchers said they put on old favourites as background noise while they’re undertaking other tasks.</li>
+          </ul>   
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+    <p class= "uk-hidden-large">With over 350 responses to this optional question, qualitatively analysing the results, they boil down the following essential reasons:</p></p>
+    <ul class= "uk-hidden-large">
+      <li><strong>Predictability:</strong> Viewers like knowing what they can expect. If they liked a show the first time around, they can reasonably expect to enjoy it on multiple viewings. Already knowing what’s going to happen lessens any tensions that can build up, making for a more relaxing TV watching experience.</li>
+      <li><strong>Decision paralysis:</strong> related to predictability, many respondents cited an overabundance of choice as a reason to return to old favourites. Unable to decide on something new, viewers go for the ease of the ‘safe option,’ choosing something they’ve watched and enjoyed before. </li>
+      <li><strong>Nostalgia:</strong> many viewers cited nostalgia and “it’s a show I grew up with” as reasons to return to a particular TV show. Watching something associated with positive memories for a viewer is an easy form of escapism.</li>
+      <li><strong>Picking up missed details:</strong> Many viewers who cited longer TV drama series as types that they would return to, do so to pick up smaller details that they missed the first time around. Additionally, for this type of show, lots of viewers said they would rewatch a series they had enjoyed after a few years had gone by and they had forgotten most of the plot details, meaning they could watch it as if it were for the first time again.</li>
+      <li><strong>Joke appreciation:</strong> Many respondents cited comedy shows as the type that they most enjoy rewatching because they love to return to the well-written jokes that make them laugh.</li>
+      <li><strong>Comfort factor:</strong> related to almost all of the above factors, many viewers enjoy rewatching old shows because the familiarity they offer is a soothing and comforting way to unwind. Related to this, many rewatchers said they put on old favourites as background noise while they’re undertaking other tasks.</li> 
+    </ul> 
+    <p class= "uk-hidden-large">Here are the kind of answers people were giving to this question:</p>
+    <div class="uk-hidden-large">
+      <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+        <p>"The Office and Parks and Recreation remind me of a good time in my life, so I rewatched both fully this year during the pandemic."</p>
+      </blockquote>
+      <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+        <p>"Star Trek Voyager - it’s cosy, and every episode has a hidden lesson behind it which is really thought provoking. It’s also very easy to watch when you’re not paying full attention."</p>
+      </blockquote>
+      <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+        <p>"Schitt's Creek. It's a beautiful series that brings me great joy and is my comfort watch. I can practically quote every episode in its entirety by heart. But I liken it to listening to music. We don't listen to a song or album we love just once; we listen to them again and again to experience the emotions they evoke in us."</p>
+      </blockquote>
+      <blockquote data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+        <p>"The Office. I've recently moved to Ireland and rewatching The Office brings me comfort in a time where everything is uncertain and I know no one. It's a safe space sort of... familiar."</p>
+      </blockquote> 
+  </div>
+  </div>
+
+  
+
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle uk-hidden-small bgimage" id="influences" style="background-image: url('img/Influences_BackgroundStretch2.jpg');height:200px;background-position:center;">
+    <h2 class="uk-heading-large uk-hidden-small" data-uk-parallax="{opacity:0.3,y:100}">Key influences on what we choose to watch</h2>
+  </div>
+
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle uk-hidden-large bgimage" id="influences" style="background-image: url('img/Influences_BackgroundStretch2.jpg');height:200px;background-position:center;">
+    <h2 class="uk-heading-large uk-hidden-large" data-uk-parallax="{opacity:0.3,y:100}">Key influences</h2>
+  </div>
+
+  <div class="uk-container uk-container-center uk-margin-top uk-width-medium-2-3 uk-hidden-small">
+    <div class="uk-grid">
+      <div class="uk-width-1-3">
+        <p class= "uk-hidden-small">As mentioned above, with so much variety out there in terms of content, sometimes it’s hard to know what you should spend your time watching. Using a Likert scale, where 1 indicates little or no influence and 5 indicates a lot of influence, this final section explores how much certain common factors influence viewing choices.</p>
+        <p class= "uk-hidden-small">Looking at figure 5.2, the results reveal that recommendations from friends and family has the highest levels of influence amongst the sample. This isn’t very surprising, as it is well documented that word of mouth has long been the most effective form of marketing. However, figures 5.1 and 5.3 aren’t too far behind, with reviews from official film & TV critics and social media buzz playing a key role in TV watching decisions amongst respondents.</p>
+        <p class= "uk-hidden-small">Influence is fairly middling when it comes to figure 5.4 and 5.6, which show how influential a film or TV show’s prominent placement on a streaming platform’s home page is and how influential traditional advertisements are. The results of figure 5.5 might be slightly skewed, as we know that a sizable percentage of the sample already noted that they do not have access to live TV. </p>      
+      </div>
+      
+      <div class="uk-width-2-3 uk-hidden-small">
+        <div class="uk-card uk-card-default uk-card-body" style="position: sticky; top: 30px;" uk-sticky="{boundary:true,top:30}">
+          <div data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+            <div class="flourish-embed" data-src="story/893812"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+      <p class= "uk-hidden-large">As mentioned above, with so much variety out there in terms of content, sometimes it’s hard to know what you should spend your time watching. Using a Likert scale, where 1 indicates little or no influence and 5 indicates a lot of influence, this final section explores how much certain common factors influence viewing choices.</p>
+      <div class="uk-hidden-large">
+        <div class="flourish-embed" data-src="story/893812"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>
+      <p class= "uk-hidden-large">Looking at figure 5.2, the results reveal that recommendations from friends and family has the highest levels of influence amongst the sample. This isn’t very surprising, as it is well documented that word of mouth has long been the most effective form of marketing. However, figures 5.1 and 5.3 aren’t too far behind, with reviews from official film & TV critics and social media buzz playing a key role in TV watching decisions amongst respondents.</p>
+      <p class= "uk-hidden-large">Influence is fairly middling when it comes to figure 5.4 and 5.6, which show how influential a film or TV show’s prominent placement on a streaming platform’s home page is and how influential traditional advertisements are. The results of figure 5.5 might be slightly skewed, as we know that a sizable percentage of the sample already noted that they do not have access to live TV. </p>
+  </div>
+
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle uk-hidden-small bgimage" id="future" style="background-image: url('img/Future_BackgroundStretch.jpg');height:200px;background-position:center;">
+    <h2 class="uk-heading-large uk-hidden-small" data-uk-parallax="{opacity:0.3,y:100}">Future predictions for TV watching habits</h2>
+  </div>
+
+  <div data-uk-parallax="{bg:-50}" class="uk-flex uk-flex-center uk-flex-middle uk-hidden-large" id="future" style="background-image: url('img/Future_BackgroundStretch.jpg');height:200px;background-position:center;">
+    <h2 class="uk-heading-large uk-hidden-large" data-uk-parallax="{opacity:0.3,y:100}">The future of TV watching</h2>
+  </div>
+
+  <div class="uk-container uk-width-medium-2-3 uk-container-center uk-margin-top">
+    <p>Analysing this data as a whole, I believe that the rise in ownership of connected devices alongside an increasing proliferation of platforms on which to watch TV and video content will continue to hit live TV viewing numbers. Average live TV viewing minutes will fall back further, but broadcast channels will remain an important way for viewers to access time sensitive content like news and live sporting events. However, I believe younger viewers will drift from live TV at a faster rate and if TV makers want to reach these audiences, they should look at ways to engage these cohorts through more digital spaces and social media if they are not doing so already. It is important for broadcasters that the emphasis is on quality content creation across platforms, rather than prioritising live viewing figures.</p>
+    <p>The majority of people now pay for streaming subscriptions and further growth looks likely as competition intensifies in the market. I predict that Netflix will remain the market leader in the short term due to the brand being synonymous with streaming and original content, however its lead will come under threat longer term. Netflix is at a disadvantage because its revenue is almost entirely reliant on subscriptions, while new rivals Apple TV and Disney Plus could potentially afford to undercut or forgo subscription fees in some cases. Competitor success will largely come down to content. This will be both the success of original programming and the ability to secure popular older content, which, as we’ve seen is popular with many people.</p>
+  </div>
+  
+  <div class="center">
+    <a href="#top" data-uk-smooth-scroll="">🔝 Back to the top 🔝</a>
+  </div>
+  
+  
+  <footer class="uk-text-center uk-margin-large">
+    <div class="footer-text">
+      ©2021 Robyn Hamilton | robynhamilton161@gmail.com | +44 7740 1978 28 | London, UK<br />
+      <a href="https://robynhamilton.myportfolio.com/work">Check out my other work</a>
+    </div>
+  </footer>
+
+
+  <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-offcanvas">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#method">Research Methodology</a></li>
+        <li><a href="#how">How we're watching</a></li>
+        <li><a href="#where">Where we're watching</a></li>
+        <li><a href="#what">What we're watching</a></li>
+        <li><a href="#influences">Key influences</a></li>
+        <li><a href="#future">The future of TV watching</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
